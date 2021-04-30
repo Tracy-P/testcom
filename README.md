@@ -14,3 +14,6 @@ In VFP 9, Using ProjectExplorer, building this project results with
 
 # UPDATE 2021-04-08
 The ProjectExplorer solution has been updated that his no longer happens. 
+
+The problem is actually caused by a bug in VFP. When the Build method is called in the method of a class, the result it returns is .F.. 
+If this class instead calls a PRG or a Procedure in a PRG to do the build, everything works correctly.
